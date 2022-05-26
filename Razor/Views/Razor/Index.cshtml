@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@{var price = 60;}
+<html>
+<body>
+    @if (price > 50)
+    {
+        <p>The price is  greater than 50.</p>
+        {
+            price=price + 100;
+        }
+                <p>@price</p>
+    }
+
+    else
+    {
+        <p>The price is less than 50.</p>
+    }
+
+</body>
+</html>
+
